@@ -1,2 +1,2 @@
-# stringification-debugger
-Discover why you can't JSON.stringify(your_object) and remove the causes.
+# stringify-save
+Discover why you can't JSON.stringify(your_object) and automaticly remove the causes.

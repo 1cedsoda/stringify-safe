@@ -1,0 +1,24 @@
+{
+  "name": "stringify-save",
+  "version": "1.0.0",
+  "description": "Discover why you can't JSON.stringify(your_object) and automaticly remove the causes.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phyyyl/stringify-save.git"
+  },
+  "keywords": [
+    "json",
+    "stringify",
+    "serialize"
+  ],
+  "author": "phyyyl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phyyyl/stringify-save/issues"
+  },
+  "homepage": "https://github.com/phyyyl/stringify-save#readme"
+}
