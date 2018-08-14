@@ -1,6 +1,6 @@
 {
-  "name": "stringify-save",
-  "version": "1.0.1",
+  "name": "stringify-safe",
+  "version": "1.0.2",
   "description": "Discover why you can't JSON.stringify(your_object) and automaticly remove the causes.",
   "main": "main.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phyyyl/stringify-save.git"
+    "url": "git+https://github.com/phyyyl/stringify-safe.git"
   },
   "keywords": [
     "json",
@@ -18,7 +18,7 @@
   "author": "phyyyl",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/phyyyl/stringify-save/issues"
+    "url": "https://github.com/phyyyl/stringify-safe/issues"
   },
-  "homepage": "https://github.com/phyyyl/stringify-save#readme"
+  "homepage": "https://github.com/phyyyl/stringify-safe#readme"
 }

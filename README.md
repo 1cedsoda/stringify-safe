@@ -1,23 +1,23 @@
-# stringify-save
+# stringify-safe
 Discover why you can't JSON.stringify(your_object) and automaticly remove the causes.
 
 # Installation
 ```shell
-npm i stringify-save
+npm i stringify-safe
 ```
 
 # Usage
 ## .fixStringify()
 ### Basic Usage
 ```javascript
-const StringifySave = require('stringify-save')
+const StringifySafe = require('stringify-safe')
 ```
-StringifySave checks if `JSON.stringify(your_object)` fails.
+StringifySafe checks if `JSON.stringify(your_object)` fails.
 
 With `.fixStringify()` the causes will be recursively determined and removed.
 
 ```javascript
-var fixedObject = StringifySave.fixStringify(brokenObject)
+var fixedObject = StringifySafe.fixStringify(brokenObject)
 ```
 
 ### Recursion Depth
@@ -29,7 +29,7 @@ The default is `10`.
 
 ```javascript
 // depth = 5
-var fixedObject = StringifySave.fixStringify(brokenObject, 5)
+var fixedObject = StringifySafe.fixStringify(brokenObject, 5)
 ```
 ### Printing
 
@@ -39,7 +39,7 @@ The default is `false`.
 ```javascript
 // depth = 6
 // printing = true
-var fixedObject = StringifySave.fixStringify(brokenObject, 5 true)
+var fixedObject = StringifySafe.fixStringify(brokenObject, 5 true)
 ```
 ## .stringify()
 This function is a warpper for `.fixStringify()`, but it direclty `JSON.stringify(your_object)` you object.
@@ -47,14 +47,14 @@ This function is a warpper for `.fixStringify()`, but it direclty `JSON.stringif
 The parametrs are working like `.fixStringify()`.
 
 ```javascript
-var fixedStrigifiedObject = StringifySave.stringify(brokenObject)
+var fixedStrigifiedObject = StringifySafe.stringify(brokenObject)
 ```
 ## .isBroken()
 
 This function tells you if your object is broken by returning a boolean.
 
 ```javascript
-var isBroken = StringifySave.isBroken(your_object)
+var isBroken = StringifySafe.isBroken(your_object)
 ```
 
 ## .hasBrokenChilds()
@@ -62,5 +62,5 @@ var isBroken = StringifySave.isBroken(your_object)
 This function tells you if your object contains broken childs by returning a boolean.
 
 ```javascript
-var hasBrokenChilds = StringifySave.hasBrokenChilds(your_object)
+var hasBrokenChilds = StringifySafe.hasBrokenChilds(your_object)
 ```
