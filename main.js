@@ -58,7 +58,7 @@ function hasBrokenChilds(obj) {
   for(var x in obj) {
     try {
       JSON.stringify(obj[x])}
-    catch {
+    catch(error) {
       return true}}
   return false
 }
@@ -67,7 +67,7 @@ function isBroken(obj) {
   try {
     JSON.stringify(obj)
     return false}
-  catch {
+  catch(error) {
     return true}
 }
 

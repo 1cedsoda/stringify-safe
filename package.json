@@ -1,6 +1,6 @@
 {
   "name": "stringify-safe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Discover why you can't JSON.stringify(your_object) and automaticly remove the causes.",
   "main": "main.js",
   "scripts": {
